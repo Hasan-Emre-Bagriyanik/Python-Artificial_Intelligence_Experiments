@@ -47,7 +47,7 @@ print(np.eye(5)) #♣ birim matris olusur
 
 
 print(np.random.randint(5,20,size=(5,4))) #5'ten baslayarak 20'ye kadar 5 satirlik 4 sutunluk bir rastgele integer sayilar ile matris olusur
-print(np.random.rand(5,20,5)) #5'ten baslayarak 20'ye kadar 5 satirlik 4 sutunluk bir rastgele float sayilar ile matris olusur
+print(np.random.rand(3,20,2)) #5'ten baslayarak 20'ye kadar 5 satirlik 4 sutunluk bir rastgele float sayilar ile matris olusur
 print(np.random.randn(5)) #arti eksi  degerler alir 
 a = np.linspace(10,50,20) # 10'dan 50'ye kadar 20 tane rastgele sayı yazarak dizi oluşturuyor
 print(a)
@@ -75,13 +75,13 @@ print(a*b) #Matrisi karşılıklı çarpma
 
 a.dot(b.T) #Matris çarpımı a matrisi(2,3), b matrisi(2,3) olduğu için hata aldık ama b nin transpozunu alırsak (2,3) (3,2) olur ve çarpım gerçekleşir
 
-print(np.exp(a))
+print(np.exp(a)) #§ tabani e olarak alir ve icindeki deger kadar ussunu alir 
 
 a = np.random.random((5,5)) # 5*5 random sayılar ile matris oluşturma
 
 print(a.sum())# matrislerin içinin tümünün toplamı 
 print(a.max())# en büyük sayı 
-print(a.min())# en küçüks sayı
+print(a.min())# en küçük sayı
 print(a.argmax())# maximum sayinin kacinci indexde oldugunu gösterir
 
 print(a.sum(axis=0)) # Sutünları toplar 
@@ -102,7 +102,7 @@ array = np.array([1,2,3,4,5,6,7])# vector dimenstion = 1 tek satırlık matris
 
 print(array[0])
 
-print(array[0:4])# ssıfırncı indexten 3'üncü indexe kadar matrisi yazdırır
+print(array[0:4])# sıfırncı indexten 3'üncü indexe kadar matrisi yazdırır
 
 reverse_array = array[::-1] # dizi ters çevirme
 print(reverse_array)
@@ -186,19 +186,3 @@ f = d.copy()
 print(d)
 print(e)
 print(f)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

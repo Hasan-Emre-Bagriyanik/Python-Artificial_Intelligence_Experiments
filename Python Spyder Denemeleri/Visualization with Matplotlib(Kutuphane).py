@@ -18,7 +18,7 @@ import pandas as pd
 
 df = pd.read_csv("iris.csv") #bir excel dosyasindan bir tablo okuduk
 
-print(df.columns) #sutunlari yazdirdik 
+print(df.columns) #sutunlari yazdirdik
 
 print(df.Species.unique) #sadece turleri cagirdik
 

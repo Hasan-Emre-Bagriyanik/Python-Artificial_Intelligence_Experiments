@@ -373,7 +373,7 @@ print(dataFrame1.loc[:3,"AGE"])#satÄ±rlardan 3. indexe kadar ve dahil olan sat
 print(dataFrame1.loc[:3,"NAME":"yeni_feature"]) #satÄ±rlardan 3. indexe kadar sutÃ¼nlardan NAME'den yeni_feature kadar hepsini alÄ±yor
 
 print(dataFrame1.loc[:3,["AGE","NAME"]]) # aynÄ± Åekilde bu sefer sutÃ¼nlardan sadece AGE ve NAME'i alÄ±yoruz
-,
+
 print(dataFrame1.loc[::-1,:]) # satÄ±rlarÄ± ters Ã§evir sutÃ¼nlarÄ±n hepsini yazdÄ±r
 
 print(dataFrame1.loc[:,:"AGE"])# satÄ±rlarÄ±n hepsi sutÃ¼nlarÄ±n baÅtan AGE'ye olanlara kadar alÄ±yoruz
@@ -408,7 +408,7 @@ print(ortalama_maas) # bu pandas kullanÄ±mÄ± ile ortalama hesaplama
 ortalama_maas1 = np.mean(dataFrame1.MAAS)
 print(ortalama_maas1)# burada ise numpy ile ortalama hesapladÄ±k
 
-dataFrame1["maas_seviyesi"] = ["DÃ¼ÅÃ¼k" if ortalama_maas > each else "yÃ¼ksek" for each in dataFrame1.MAAS]
+dataFrame1["maas_seviyesi"] = ["Dusuk" if ortalama_maas > each else "yuksek" for each in dataFrame1.MAAS]
 """
 for each in dataFrame1.MAAS:
     if ortalama_maas > each:
@@ -430,7 +430,7 @@ dataFrame1.columns = [eah.split()[0]+"_"+each.split()[1]  if(len(each.split())>1
 #dataFrame1.drop(["yeni_feature"],axis=1,inplace=True) #bu sutÃ¼nu kaldÄ±rÄ±yor tablodan
 
 data1 = dataFrame1.head()
-data2 = dataFrame1.tail()
+
 
 #vertical (alt alta sÄ±ralama)
 data_concat = pd.concat([data1,data2],axis=0)# iki Åeyi birleÅtirme 'concat'

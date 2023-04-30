@@ -43,13 +43,13 @@ float_num = 15.9
 #int(float_num)
 #Out[33]: 15
 
-#round(float_num)
+round(float_num)
 #Out[35]: 16
 
 a = 20
 b = 50
 
-sonuc = ((a+b)*100/75)*a/b
+#sonuc = ((a+b)*100/75)*a/b
 
 
 def function(a,b):
@@ -123,7 +123,7 @@ def calculate(x):
 print(calculate(3))
 
 #lambda fonksiyon
-result2 = lambda x: x*x
+result2 = lambda x: x*x 
 print(result2(2))
 
 #%% liste yapısı
@@ -138,7 +138,7 @@ type(list_str)
 value = List[1]
 print(value)
 
-last_value = List[-1]
+last_value = List[-1] # en sondaki degeri alir
 print(last_value)
 
 list_divide = List[0:5:2]#0'dan başla 5'e kadar iki iki artarak yaz
@@ -195,6 +195,7 @@ def test():
 dic = test()
 print(dic.keys())
 print(dic["Emre"])
+print(dic["Mehmet Ali"])
 
 
 #%% conditionals(koşullar)
@@ -243,8 +244,7 @@ def year_Century(year):
            return int(str_year[:2])+1 #1750 1860...
             
         
-print(year_Century(2001))
-
+print(year_Century(2003) , "'inci Yüzyıl")
 
 #%% for loops (döngüler)
 
@@ -300,6 +300,7 @@ for i in list1:
         continue
 
 print(min)
+
 
 #%%Class and Constructor (Sınıflar ve yapıcı metotlar)
 
